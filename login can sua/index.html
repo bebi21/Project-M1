@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login form</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="wrapper" id="wrapper">
+      <form action="" id="loginUser">
+        <h1>Login</h1>
+        <div class="input-box">
+          <input
+            type="text"
+            placeholder="Username"
+            id="userNameLogin"
+            required
+          />
+        </div>
+        <div class="input-box">
+          <input
+            type="text"
+            placeholder="Password"
+            id="passWordLogin"
+            required
+          />
+        </div>
+        <div class="remember-forgot">
+          <label> <input type="checkbox" />Remember me </label>
+          <a class="forgotChangeColor" href="#" onclick="forgotPassword()"
+            >Forgot password?</a
+          >
+        </div>
+        <button type="button" class="btn" onclick="login()">Login</button>
+
+        <div class="register-link">
+          <p>
+            Don't have an account?<a href="#" onclick="startRegister()">
+              Register</a
+            >
+          </p>
+        </div>
+      </form>
+      <form action="" id="forgotPassword">
+        <h1>Forgot Password</h1>
+        <div class="input-box">
+          <input
+            type="text"
+            placeholder="Username"
+            id="userNameSearch"
+            required
+          />
+        </div>
+
+        <div class="input-box">
+          <button type="button" class="btn" onclick="searchUser()">
+            search
+          </button>
+        </div>
+      </form>
+      <form action="" id="resetPassword">
+        <h1>Reset Password</h1>
+        <div class="input-box">
+          <input
+            type="text"
+            placeholder="Enter a new password"
+            id="resetPass"
+            required
+          />
+        </div>
+        <div class="input-box">
+          <input
+            type="text"
+            placeholder="Retype Password"
+            id="retypePass"
+            required
+          />
+        </div>
+
+        <div class="input-box">
+          <button type="button" class="btn" onclick="savePassword()">
+            Save
+          </button>
+        </div>
+      </form>
+      <form action="" id="registerUser">
+        <h1>Register</h1>
+        <div class="input-box">
+          <input type="text" placeholder="Username" required id="userName" />
+        </div>
+        <div class="input-box">
+          <input type="text" placeholder=" Password" id="passWord" required />
+        </div>
+        <div class="input-box">
+          <strong>
+            Mật khẩu từ 8 đến 15 ký tự, trong đó có ít nhất một chữ thường, một
+            chữ hoa, một chữ số và một ký tự đặc biệt</strong
+          >
+        </div>
+        <div class="input-box">
+          <input type="text" placeholder="Address" required id="address" />
+        </div>
+        <div class="input-box">
+          <input
+            type="number"
+            placeholder="Phone Number"
+            id="phoneNumber"
+            required
+          />
+        </div>
+        <button type="button" class="btn" onclick="register()">Register</button>
+      </form>
+    </div>
+    <video autoplay loop muted>
+      <source type="video/mp4" src="./video/DING TEA---TARO MASH.mp4" />
+    </video>
+    <script src="./main.js"></script>
+  </body>
+</html>

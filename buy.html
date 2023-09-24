@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/buy.css" />
+    <script
+      src="https://kit.fontawesome.com/a1c6005be6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="user-order">
+      <div class="backHome">
+        <a href="./order.html" style="font-size: 50px"
+          ><i class="fa-solid fa-xmark"></i
+        ></a>
+      </div>
+      <div class="table-order">
+        <table>
+          <caption>
+            List Order
+          </caption>
+          <thead>
+            <tr>
+              <th style="width: 50px; height: 100px">STT</th>
+              <th style="width: 400px">Ảnh sản phẩm</th>
+              <th style="width: 200px">Số lượng</th>
+              <th style="width: 200px">Số tiền</th>
+              <th style="width: 200px">Xóa Sản Phẩm</th>
+            </tr>
+          </thead>
+          <tbody id="user-oder_listItem"></tbody>
+          <tfoot>
+            <tr>
+              <td colspan="2" style="height: 50px">Tong tien</td>
+              <td colspan="3" id="showPay">1000</td>
+            </tr>
+            <tr>
+              <td colspan="5" style="height: 50px">
+                <button>Pay</button>
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+      <!-- <div class="list-page">
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+      </div> -->
+    </div>
+    <script src="./js/buy.js"></script>
+  </body>
+</html>

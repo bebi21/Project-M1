@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  text-align: center;
+}
+table {
+  border-collapse: collapse;
+}
+body {
+  background-color: #854343;
+  width: 100vw;
+  height: 100vh;
+}
+/* user-oder */
+caption {
+  text-align: center;
+  font-size: 3rem;
+  padding-top: 10px;
+}
+.user-order {
+  width: 100vw;
+  height: 100vh;
+  margin-top: 20px;
+}
+.table-order {
+  background-color: rgba(240, 248, 255, 0.4);
+  z-index: 99;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+}
+/* list -page */
+.list-page {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  background-color: aliceblue;
+}
+.list-page div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid burlywood;
+  padding: 10px;
+}
+/* Iteam */
+#user-oder_listItem td:nth-child(2) img {
+  width: 100px;
+  height: auto;
+}
+.backHome {
+  position: absolute;
+  right: 100px;
+}
